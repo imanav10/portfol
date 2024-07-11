@@ -35,7 +35,6 @@ body {
   padding: 20px;
 }
 
-
 .fancy > letter {
   display: inline-block;
   transition: transform 0.3s;
