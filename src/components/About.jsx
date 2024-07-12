@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import sample from '/Videos/video.mp4';
+import sample from '/Videos/vid.mp4';
 import { motion } from 'framer-motion'; // Step 2: Import motion
 const About = () => {
   useEffect(() => {
@@ -22,28 +22,31 @@ const About = () => {
 		
 		<div>
 			<section className='hero'>
-			  <motion.div
-				className="github-card-wrapper"
-				drag
-				dragConstraints={{ left: 0, right: 300, top: 0, bottom: 300 }}
-				whileDrag={{ scale: 1.1 }}
-				style={grabCursorStyle} // Apply the grab cursor style here
-			  >
-				<div className="github-card" data-github="imanav10" data-width="400" data-height="150" data-theme="default">
-				  {/* Content that should be draggable along with the hand icon */}
+				  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
+				  <motion.div
+					className="github-card-wrapper"
+					drag
+					dragConstraints={{ left: -300, right: 300, top: 0, bottom: 300 }}
+					whileDrag={{ scale: 1.1 }}
+					style={grabCursorStyle} // Apply the grab cursor style here
+				  >
+					<div className="github-card" data-github="imanav10" data-width="400" data-height="150" data-theme="default">
+					  {/* Content of the GitHub card */}
+					</div>
+					<p className="px-5 hover:text-white transition-all">> pick me and move</p>
+				  </motion.div>
+				  {/* New text element added here, vertically aligned with the GitHub card */}
+				  <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
+					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="px-5 hover:text-gold transition-all"> >はい My</p>	
+					<p style={{ fontSize: '100px' }} className="px-5 hover:text-gold transition-all"> 私の名前は</p>
+					<p style={{ fontSize: '50px' }} className="px-5 hover:text-gold transition-all">Watashinonamaeha - Name is MANAV</p>
+
+				  </div>
 				</div>
-				<p>*pick me</p>
-			  </motion.div>
-			  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'white' }}>
-			{/* Adjust the styling as needed to ensure visibility */}
-			<h4>Hey Fellas</h4>
-		  </div>
 			</section>
-			<div className="video-container">
-				<video className='videoTag' autoPlay loop muted>
-					<source src={sample} type='video/mp4' />
-				</video>
-			</div>
+			<section>
+				<img src="book.jpeg" />
+			</section>
 		</div>
 	);
 };

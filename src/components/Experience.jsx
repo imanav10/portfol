@@ -7,7 +7,7 @@ const Experience = () => {
         <div class = "h-5/6 w-full flex-center flex-col">
             <div id="text">
                 <div class="line">
-                    <d id="channel-link" class="word">Experience</d>
+                    <d id="channel-link" class="word" className="hover:text-pink transition-all">Experience</d>
                 </div>
                 <div class="line">
                     <d class="word fancy">JAVASCRIPT</d>
@@ -30,15 +30,11 @@ const Experience = () => {
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy">REACT</d>
-                    <d class="word fancy">Intermediate</d>
-                </div>
-                <div class="line">
                     <d class="word fancy">KOTLIN</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy">KOTLIN</d>
+                    <d class="word fancy">GO</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
   
