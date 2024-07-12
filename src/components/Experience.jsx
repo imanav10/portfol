@@ -22,7 +22,7 @@ const Experience = () => {
                     <d class="word fancy"> 1+ YR Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy">THREEJS gREENSOCK GSAP</d>
+                    <d class="word fancy">THREEJS GREENSOCK GSAP</d>
                     <d class="word fancy">BASIC</d>
                 </div>
                 <div class="line">
@@ -34,7 +34,7 @@ const Experience = () => {
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy">KOTLIN</d>
+                    <d class="word fancy">GO</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
 
