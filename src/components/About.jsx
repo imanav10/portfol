@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import sample from '/Videos/vid.mp4';
-import { motion } from 'framer-motion'; // Step 2: Import motion
+import { motion } from 'framer-motion'; 
+
+
 const About = () => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -21,7 +23,7 @@ const About = () => {
 	return (
 		
 		<div>
-			<section className='hero'>
+			<section className='hero' style={{height: '100vh'}}>
 				  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
 				  <motion.div
 					className="github-card-wrapper"
@@ -36,16 +38,27 @@ const About = () => {
 					<p className="px-5 hover:text-white transition-all">> pick me and move</p>
 				  </motion.div>
 				  {/* New text element added here, vertically aligned with the GitHub card */}
-				  <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
+				  
+                  <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
 					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="px-5 hover:text-gold transition-all"> >はい My</p>	
-					<p style={{ fontSize: '100px' }} className="px-5 hover:text-gold transition-all"> 私の名前は</p>
+					<p style={{ fontSize: '100px',fontColor: 'gold' }} className="px-5 hover:text-gold transition-all"> 私の名前は</p>
 					<p style={{ fontSize: '50px' }} className="px-5 hover:text-gold transition-all">Watashinonamaeha - Name is MANAV</p>
-
 				  </div>
 				</div>
 			</section>
-			<section>
-				<img src="book.jpeg" />
+			<section class="containers">
+				<img src="book.png" />
+				<div class="bottom-left" id="text">
+                    <h1  className="px-5 hover:text-gold transition-all word fancy" style={{color: 'magenta'}}>YKYK</h1>
+                    <h1 className="px-5 hover:text-gold transition-all word fancy" style={{color: 'magenta'}}>マナブ</h1>
+					
+                </div>
+				<div class="bottom-right"><iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/playlist/4OYD1lr1BkzZ1XhITn3Wz5?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				<br />
+				<iframe style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/playlist/4eFzULFLUvY3zAKA4Talnh?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				</div>
+			
+				
 			</section>
 		</div>
 	);

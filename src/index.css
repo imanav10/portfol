@@ -120,11 +120,29 @@ section.hero {
   font: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-section.hero {
-  width: 100%;
-  height: 100%;
+.containers {
+  position: relative;
+  text-align: center;
+  color: white;
 }
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.text-red {
+  color: red !important; /* Using !important to override other styles if necessary */
+}
+section.hero {
+  width: 100vw;
+  height: 100vh;
+}
+
 section.hero h1{
   font-family: '"Computer Modern",Concrete' ;
   position: absolute;
