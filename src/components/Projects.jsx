@@ -27,7 +27,7 @@ function Projects() {
   return (
     
     <>
-      <section className='hero' style={{background: '#ffffff', paddingTop: "10%", paddingLeft: '10%'}}>
+      <section className='hero' style={{background: '#ffffff', paddingTop: "10%", paddingLeft: '10%',}}>
         <b style={{color: '#000000', fontSize: "50px", fontFamily: "Helvetica,Arial,sans-serif"}}>Index of /E0/E2/chikoyeat (social)</b>
         <br/>
         <hr noshade="" align="left" width="100%"></hr>

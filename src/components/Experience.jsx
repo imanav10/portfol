@@ -2,7 +2,7 @@
 
 const Experience = () => {
   return (
-    <div class container>
+    <div class container style={{background: 'black'}}>
       <section className=" hero">
         <div style={{paddingLeft: '10%', paddingRight:'10%', paddingTop: "5%",paddingBottom: '5%'}}>
             <div id="text">

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import sample from '/Videos/vid.mp4';
 import { motion } from 'framer-motion'; 
 
 
