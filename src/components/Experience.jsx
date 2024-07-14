@@ -10,40 +10,41 @@ const Experience = () => {
                     <d id="channel-link" class="word" 
                         >Experience</d>
                 </div>
-                <div class="line">
-                    <d class="word fancy" className="hover:text-blue">JAVASCRIPT</d>
+                <div class="line" onClick={console.log}>
+                    <d class="word fancy hover:text-blue">JAVASCRIPT</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-green transition-all">PYTHON</d>
+                    <d class="word fancy hover:text-green transition-all">PYTHON</d>
                     <d class="word fancy">ExperienceD</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-blue transition-all">DATASTRUCTURE AND ALGORITHMS</d>
+                    <d class="word fancy hover:text-blue transition-all">DATASTRUCTURE AND ALGORITHMS</d>
                     <d class="word fancy"> 1+ YR Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-orange transition-all">THREEJS GREENSOCK GSAP</d>
-                    <d class="word fancy">BASIC</d>
+                    <d class="word fancy hover:text-orange transition-all" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>THREEJS GREENSOCK GSAP</d>
+                    <d class="word fancy">Basic</d>
+
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-blue transition-all">SASS      DJANGO    FRAMER MOTION</d>
+                    <d class="word fancy hover:text-blue transition-all">SASS      DJANGO    FRAMER MOTION</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-blue transition-all">KOTLIN</d>
+                    <d class="word fancy hover:text-blue transition-all">KOTLIN</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-blue transition-all">GO</d>
+                    <d class="word fancy hover:text-blue transition-all">GO</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-blue transition-all">Lua</d>
+                    <d class="word fancy hover:text-blue transition-all">Lua</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy" className="hover:text-orange transition-all">Zig</d>
+                    <d class="word fancy hover:text-orange transition-all">Zig</d>
                     <d class="word fancy">Basic</d>
                 </div>
             </div>

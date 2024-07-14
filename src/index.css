@@ -143,6 +143,9 @@ section.hero {
   height: 100vh;
 }
 
+
+
+
 section.hero h1{
   font-family: '"Computer Modern",Concrete' ;
   position: absolute;
@@ -152,6 +155,98 @@ section.hero h1{
 section.hero div h1{
   flex: content;
   display: flex;
+}
+/* Styles for Contact component */
+.Contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Contact h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Contact button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Contact button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for Modal */
+.Modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure modal appears above other content */
+}
+
+.Modal h2 {
+  margin-bottom: 20px;
+}
+
+.Modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal label {
+  margin-bottom: 8px;
+}
+
+.Modal input,
+.Modal textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.Modal button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal-backdrop.show {
+  opacity: 0.5; /* Adjust the opacity as needed */
+}
+.Modal button[type="submit"] {
+  background-color: #28a745;
+}
+
+.Modal button:hover {
+  background-color: #0056b3;
+}
+
+.Modal button:last-of-type {
+  margin-top: 10px;
+  background-color: #dc3545;
+}
+
+.Modal button:last-of-type:hover {
+  background-color: #c82333;
 }
 
 .clients {
