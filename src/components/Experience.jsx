@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <div class container style={{background: 'black'}}>
       <section className=" hero" id='experience'>
-        <div style={{paddingLeft: '10%', paddingRight:'10%', paddingTop: "5%",paddingBottom: '5%'}}>
+        <div style={{padding: '5%', textAlign: 'center', maxWidth: '90%', margin: 'auto'}}>
             <div id="text">
                 <div class="line">
                     <d id="channel-link" class="word" 
@@ -25,11 +25,6 @@ const Experience = () => {
                 <div class="line">
                     <d class="word fancy hover:text-orange transition-all" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>THREEJS GREENSOCK GSAP</d>
                     <d class="word fancy">Basic</d>
-
-                </div>
-                <div class="line">
-                    <d class="word fancy hover:text-blue transition-all">SASS      DJANGO    FRAMER MOTION</d>
-                    <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
                     <d class="word fancy hover:text-blue transition-all">KOTLIN</d>

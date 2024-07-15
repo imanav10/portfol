@@ -1,13 +1,3 @@
-import {
-    profilepic,
-    checkmark,
-    linkedin,
-    education,
-    experience,
-    github,
-    email,
-  } from "../utils";
-  
   export const navLists = ["@imanav07", "About", "Experience", "Contact"];
   
   export var $root = $('html, body');

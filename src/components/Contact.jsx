@@ -85,8 +85,8 @@ const Contact = () => {
             </button>
           </form>
         
-          <div style={{paddingTop: '110px'}}>
-            <h2 style={{justifyContent: 'center', paddingTop: '30px', fontSize: '123px', textAlign: 'center'}} className='hover:text-orange'>マナヴからの愛によって作られた</h2>
+          <div style={{paddingTop: '10px'}}>
+            <h2 style={{justifyContent: 'center', paddingTop: '10px', fontSize: '90px', textAlign: 'center'}} className='hover:text-orange'>マナヴからの愛によって作られた</h2>
             <h2>made with ❤️ by imanav10</h2>
           </div>
         </div>

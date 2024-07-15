@@ -14,7 +14,7 @@ const About = () => {
     return () => {
       document.body.removeChild(script);
     };
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []); 
 
 	const grabCursorStyle = {
 	  cursor: 'grab',
@@ -22,7 +22,7 @@ const About = () => {
 	useEffect(() => {
 		const checkAndScroll = () => {
 		  let url = window.location.href.split("#experience");
-		  if (url.length < 2) return; // Exit if there's no fragment
+		  if (url.length < 2) return; 
 	  
 		  let target = url[url.length - 1].toLowerCase();
 		  let element = document.getElementById(target);
@@ -30,8 +30,7 @@ const About = () => {
 		  if (element) {
 			element.scrollIntoView({ behavior: "smooth", block: "start" });
 		  } else {
-			// If the element isn't found, wait a bit and try again
-			setTimeout(checkAndScroll, 100); // Adjust time as needed
+			setTimeout(checkAndScroll, 100); 
 		  }
 		};
 	  
@@ -41,7 +40,7 @@ const About = () => {
 	return (
 		
 		<div>
-			<section className='hero' style={{height: '100vh'}}>
+			<section className='hero'>
 				  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
 				  <motion.div
 					className="github-card-wrapper"
@@ -57,9 +56,9 @@ const About = () => {
 				  </motion.div>
 				  
                   <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
-					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="px-5 hover:text-gold transition-all" > <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.imdb.com/title/tt5311514/&ved=2ahUKEwjwsI3RjamHAxWPe2wGHR9iBqIQFnoECD4QAQ&usg=AOvVaw3dxRlPsgi3QAr0aqIVH_th' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>> はい My</a></p>	
-					<p style={{ fontSize: '100px',fontColor: 'gold' }} className="px-5 hover:text-gold transition-all"> 私の名前は</p>
-					<p style={{ fontSize: '50px' }} className="px-5 hover:text-gold transition-all">Watashinonamaeha - Name is MANAV</p>
+					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="hover:text-gold transition-all" > <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.imdb.com/title/tt5311514/&ved=2ahUKEwjwsI3RjamHAxWPe2wGHR9iBqIQFnoECD4QAQ&usg=AOvVaw3dxRlPsgi3QAr0aqIVH_th' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>> はい My</a></p>	
+					<p style={{ fontSize: '100px',fontColor: 'gold' }} className="hover:text-gold transition-all"> 私の名前は</p>
+					<p style={{ fontSize: '50px' ,textDecoration: 'none', color: 'inherit'}} className="hover:text-gold transition-all"><a href="/about">Watashinonamaeha - Name is MANAV</a></p>
 				  </div>
 				</div>
 			</section>
