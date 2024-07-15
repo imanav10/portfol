@@ -263,14 +263,6 @@ section.trigger-footer {
   background: #000;
 }
 
-@media (max-width: 900px) {
-  .sticky-bar .item p {
-    font-size: 2.5vw;
-  }
-  .logo p {
-    font-size: 20px;
-  }
-}
 
 img {
   width: 100%;  
@@ -295,19 +287,7 @@ img {
   max-width: 1120px;
 }
 
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
+
 
 .line{
   display: flex;
@@ -342,125 +322,11 @@ e {
   margin: auto 0;
 }
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-    text-align: center;
-  }
-  section {
-    margin: 0 5%;
-    text-align: center;
-  }
-  .sticky-bar {
-    position: fixed;
-    width: 100%;
-    top: 50%;
-    transform: trasnslateY(-50%);
-    padding: 0em;
-    display: flex;
-    mix-blend-mode: difference;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-    text-align: center;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
-}
 
 
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  .sticky-bar {
-    position: flex;
-    width: 100%;
-    top: 50%;
-    transform: trasnslateY(-50%);
-    padding: 0em;
-    display: flex;
-    mix-blend-mode: difference;
-  }
-  d {
-    color:#fff;
-    font-size: 25px;
-    font-family: 'rubik', sans-serif;
-    margin: 0rem;
-    text-transform: uppercase;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-  .section__text__p2 {
-    font-size: 1.25rem;
-  }
-  .title {
-    font-size: 2rem;
-  }
-  .text-container {
-    text-align: justify;
-  }
-}
+
+
 
 .container {
   width: 100%;
@@ -500,109 +366,3 @@ f {
   text-align: center;
 }
 
-
-@layer utilities {
-  .flex-center {
-    @apply flex items-center justify-center
-  }
-
-  .nav-height {
-    @apply h-[calc(100vh-60px)]
-  }
-
-  .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
-  }
-
-  .color-container {
-    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-300 backdrop-blur
-  }
-
-  .size-btn-container {
-    @apply flex items-center justify-center p-1 rounded-full bg-gray-300 backdrop-blur ml-3 gap-1
-  }
-
-  .size-btn {
-    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all
-  }
-
-  .common-padding {
-    @apply sm:py-32 py-20 sm:px-10 px-5
-  }
-
-  .section-heading {
-    @apply text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20 justify-center items-center flex flex-col flex-center
-  }
-
-  .feature-text {
-    @apply text-gray max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
-  }
-
-  .feature-text-container {
-    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5
-  }
-
-  .feature-video {
-    @apply w-full h-full object-cover object-center scale-150 opacity-0
-  }
-
-  .feature-video-container {
-    @apply w-full flex flex-col md:flex-row gap-5 items-center
-  }
-
-  .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20
-  }
-
-  .control-btn {
-    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center
-  }
-
-  .hero-titlex {
-    @apply text-center font-semibold text-7xl text-gray-100 opacity-50 max-md:mb-10
-  }
-
-  .herox-titley {
-    @apply text-center text-2xl opacity-10 max-md:mb-10 text-sm
-  }
-
-  .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-100 max-md:mb-10
-  }
-
-  .hiw-title {
-    @apply text-4xl md:text-7xl font-semibold text-center
-  }
-
-  .hiw-subtitle {
-    @apply text-gray font-semibold text-xl md:text-2xl py-10 text-center
-  }
-
-  .hiw-video {
-    @apply absolute w-[95%] h-[90%] rounded-[56px] overflow-hidden
-  }
-
-  .hiw-text-container {
-    @apply flex md:flex-row flex-col justify-between items-start gap-24
-  }
-
-  .hiw-text {
-    @apply text-gray text-xl font-normal md:font-semibold
-  }
-
-  .hiw-bigtext {
-    @apply text-white text-3xl md:text-5xl font-normal md:font-semibold my-2
-  }
-
-  .video-carousel_container {
-    @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]
-  }
-
-  .g_fadeIn {
-    @apply opacity-0 translate-y-[100px]
-  }
-
-  .txt {
-    @apply text-black text-4xl font-semibold
-  }
-}

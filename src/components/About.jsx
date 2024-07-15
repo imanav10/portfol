@@ -51,11 +51,10 @@ const About = () => {
 					style={grabCursorStyle} // Apply the grab cursor style here
 				  >
 					<div className="github-card" data-github="imanav10" data-width="400" data-height="150" data-theme="default">
-					  {/* Content of the GitHub card */}
+					  {}
 					</div>
 					<p className="px-5 hover:text-white transition-all">> pick me and move</p>
 				  </motion.div>
-				  {/* New text element added here, vertically aligned with the GitHub card */}
 				  
                   <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
 					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="px-5 hover:text-gold transition-all" > <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.imdb.com/title/tt5311514/&ved=2ahUKEwjwsI3RjamHAxWPe2wGHR9iBqIQFnoECD4QAQ&usg=AOvVaw3dxRlPsgi3QAr0aqIVH_th' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>> はい My</a></p>	
