@@ -22,7 +22,7 @@ body {
 .videoTag {
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: auto;
   height: 100vh;
   transform: translate(-0%, -00%);
   object-fit:fill; /* Cover the full screen */
@@ -47,7 +47,7 @@ body {
   text-align: center;
 }
 section.hero p{
-  color:darkgrey;
+  color:rgb(255, 255, 255);
 }
 section.hero h4{
   padding: 12px;
@@ -186,26 +186,6 @@ section.hero div h1{
 }
 
 /* Styles for Modal */
-.Modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure modal appears above other content */
-}
-
-.Modal h2 {
-  margin-bottom: 20px;
-}
-
-.Modal form {
-  display: flex;
-  flex-direction: column;
-}
 
 .hero form label {
   display: block;
@@ -233,7 +213,7 @@ section.hero div h1{
   resize: vertical; /* Allows the user to vertically resize the textarea (not horizontally) */
 }
 .hero form {
-  background: rgba(51, 51, 51, 0.8);
+  background: rgba(73, 73, 73, 0.8);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -241,8 +221,8 @@ section.hero div h1{
   width: 100%;
 }
 .hero form button {
-  background-color: #0056b3;
-  color: rgba(51, 51, 51, 0.8);
+  background-color: #fffb00;
+  color: rgba(0, 0, 0, 0.8);
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -251,10 +231,14 @@ section.hero div h1{
 }
 
 .hero form button:hover {
-  background-color: #003d82;
+  background-color: #ffffff;
 }
 
-
+.hero form input[type="text"],
+.hero form input[type="email"],
+.hero form textarea {
+  color: rgba(151, 151, 151, 0.1); 
+}
 
 .clients {
   width: 100%;
@@ -297,7 +281,13 @@ img {
 .section__text__p1 {
   text-align: center;
 }
-
+.warp {
+  padding-top: 50vh; /* Adds space above the text */
+  text-align: center; /* Centers the text horizontally */
+  color: #FFFFFF; /* Sets the text color to white for contrast */
+  font-size: 18px; /* Adjusts the text size */
+  font-weight: bold; /* Makes the text bold */
+}
 .scrim-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;

@@ -1,34 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion'; 
+import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [showModal, setShowModal] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const toggleModal = () => setShowModal(!showModal);
   const toggleSound = () => setIsPlaying(!isPlaying);
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "//cdn.jsdelivr.net/github-cards/latest/widget.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Example action: log the form data to the console
     console.log({ name, email, message });
-    // Here you would typically send the data to a server
   };
 
   return (
@@ -38,7 +22,7 @@ const Contact = () => {
         Your browser does not support the audio tag.
       </audio>
       <section>
-        <video autoPlay loop playsInline muted style={{ position: 'fixed', right: '0', bottom: '0', minWidth: '100%', minHeight: '100%', zIndex: '-1' }}>
+        <video autoPlay loop playsInline muted style={{ position: 'fixed', right: '0', bottom: '0', minWidth: '100%', minHeight: '100%', zIndex: '-1' ,width: 'auto'}}>
           <source src="Videos/hard.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -46,22 +30,33 @@ const Contact = () => {
           {isPlaying ? 'Pause Sound' : 'Play Sound'}
         </button>
       </section>
-      <section className='hero' style={{  display: 'flex',justifyContent: 'center',alignItems: 'center',height: '100vh',color: 'white',padding: '20px', background: 'white'}}>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Name:
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-          </label>
-          <label>
-            Email:
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
-          <label>
-            Message:
-            <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
+      <section className='hero' style={{paddingLeft: '122px',justifyContent: 'center',alignItems: 'center',color: 'white',   background: 'url("last.jpeg") no-repeat center center fixed', 
+  backgroundSize: 'cover',paddingTop: '5%'}}>
+        <div style={{justifyContent: 'center'}}>
+          <>
+            <h2 style={{paddingBottom: "50px", fontSize: '48px'}}>Contact me</h2>
+          </>
+          <form onSubmit={handleSubmit}>
+            <label>
+              Name:
+              <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='name'/>
+            </label>
+            <label>
+              Email:
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='email'/>
+            </label>
+            <label>
+              Message:
+              <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='message'/>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        
+          <div style={{paddingTop: '110px'}}>
+            <h2 style={{justifyContent: 'center', paddingTop: '30px', fontSize: '123px', textAlign: 'center'}} className='hover:text-orange'>マナヴからの愛によって作られた</h2>
+            <h2>made with ❤️ by imanav10</h2>
+          </div>
+        </div>
       </section>
     </>
   );

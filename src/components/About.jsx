@@ -19,6 +19,7 @@ const About = () => {
 	  cursor: 'grab',
 	};
 
+
 	return (
 		
 		<div>
