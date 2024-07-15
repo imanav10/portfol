@@ -1,23 +1,54 @@
 import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from '@emailjs/browser';
+import { serviceId, publicKey, templateId } from '../../public/api';
 
 const Contact = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const toggleSound = () => setIsPlaying(!isPlaying);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const audioRef = useRef(null); // Step 1: Reference the audio element
 
-  const handleSubmit = (e) => {
+  useEffect(() => { // Step 2: Effect hook to toggle play/pause
+    if (isPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  }, [isPlaying]); // Depend on isPlaying to trigger effect
+
+  const toggleSound = () => setIsPlaying(!isPlaying); // Ensure this toggles the state
+
+
+  const form = useRef(null);
+  const [loading, setLoading] = useState(false); 
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log({ name, email, message });
+    setLoading(true);
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setLoading(false);
+          form.current.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setLoading(false);
+        },
+      );
+
+
+
   };
 
   return (
     <>
-      <audio id="background-audio" loop autoplay>
+      <audio ref={audioRef} id="background-audio" loop>
         <source src="hard.mp3" type="audio/mp3" />
         Your browser does not support the audio tag.
       </audio>
@@ -31,25 +62,27 @@ const Contact = () => {
         </button>
       </section>
       <section className='hero' style={{paddingLeft: '122px',justifyContent: 'center',alignItems: 'center',color: 'white',   background: 'url("last.jpeg") no-repeat center center fixed', 
-  backgroundSize: 'cover',paddingTop: '5%'}}>
+  backgroundSize: 'cover',paddingTop: '5%'}} id = 'contact'>
         <div style={{justifyContent: 'center'}}>
           <>
             <h2 style={{paddingBottom: "50px", fontSize: '48px'}}>Contact me</h2>
           </>
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={sendEmail}>
             <label>
               Name:
-              <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='name'/>
+              <input type="text" name="user_name" onChange={(e) => setName(e.target.value)} placeholder='name' style={{color: 'black'}} required/>
             </label>
             <label>
               Email:
-              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='email'/>
+              <input type="email" name="user_email" onChange={(e) => setEmail(e.target.value)} placeholder='email' style={{color: 'black'}} required/>
             </label>
             <label>
               Message:
-              <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder='message'/>
+              <textarea type="text" name="user_message" onChange={(e) => setMessage(e.target.value)} placeholder='message' style={{color: 'black'}} required/>
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={loading}>
+              {loading ? 'Sending...' : 'Submit'} {/* Step 2: Update button text based on loading state */}
+            </button>
           </form>
         
           <div style={{paddingTop: '110px'}}>
