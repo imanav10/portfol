@@ -25,3 +25,4 @@ dist-ssr
 
 api.jsx
 .api.jsx
+public/api.jsx
