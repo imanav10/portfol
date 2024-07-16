@@ -377,13 +377,15 @@ e {
     text-align: justify;
   }
   .github-card-wrapper {
-    padding-left: 107%;
+    padding: '10px';
+
   }
   .github-card {
     user-select: auto; /* Override to allow selection */
     cursor: grab;
     display: flex;
     text-align: center;
+
   }
   section.hero div {
     font-size: 1px;

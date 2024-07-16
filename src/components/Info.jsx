@@ -26,7 +26,7 @@ const Info = () => {
                             hii, My name is Manav
                         </h2>
                         <h2 style={{marginLeft: "13px", paddingBottom: '12px'}}>
-                            I am a undergrad at nsut.
+                            I am a undergrad at NSUT Delhi. I use vim + Arch btw.
                         </h2>
                         <SyntaxHighlighter language="LaTeX">
                         {`\\documentclass{article}

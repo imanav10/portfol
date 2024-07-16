@@ -2,21 +2,23 @@ import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from '@emailjs/browser';
 import { serviceId, publicKey, templateId } from '../../public/api';
+import SoundToggleButton from '../SoundTogglebutton';
 
 const Contact = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
 
-  const audioRef = useRef(null); // Step 1: Reference the audio element
-
-  useEffect(() => { // Step 2: Effect hook to toggle play/pause
-    if (isPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
+  const toggleSound = () => {
+    if (audioRef.current) {
+      const isAudioPlaying = !audioRef.current.paused;
+      if (isAudioPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isAudioPlaying);
     }
-  }, [isPlaying]); // Depend on isPlaying to trigger effect
-
-  const toggleSound = () => setIsPlaying(!isPlaying); // Ensure this toggles the state
+  };
 
 
   const form = useRef(null);
@@ -57,11 +59,9 @@ const Contact = () => {
           <source src="Videos/hard.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <button onClick={toggleSound} style={{ zIndex: '1', position: 'absolute', top: '20px', right: '20px' }}>
-          {isPlaying ? 'Pause Sound' : 'Play Sound'}
-        </button>
+        <SoundToggleButton  toggleSound={toggleSound} isPlaying={isPlaying} />
       </section>
-      <section className='hero' style={{paddingLeft: '122px',justifyContent: 'center',alignItems: 'center',color: 'white',   background: 'url("last.jpeg") no-repeat center center fixed', 
+      <section className='hero' style={{paddingLeft: '122px',justifyContent: 'center',alignItems: 'center',color: 'white',   background: 'url("last.gif") no-repeat center center fixed', 
   backgroundSize: 'cover',paddingTop: '5%'}} id = 'contact'>
         <div style={{justifyContent: 'center'}}>
           <>
@@ -86,7 +86,7 @@ const Contact = () => {
           </form>
         
           <div style={{paddingTop: '10px'}}>
-            <h2 style={{justifyContent: 'center', paddingTop: '10px', fontSize: '90px', textAlign: 'center'}} className='hover:text-orange'>マナヴからの愛によって作られた</h2>
+            <h2 style={{justifyContent: 'center', paddingTop: '10px', fontSize: '90px', textAlign: 'center'}} className='hover:text-orange stickybar'>マナヴからの愛によって作られた</h2>
             <h2>made with ❤️ by imanav10</h2>
           </div>
         </div>

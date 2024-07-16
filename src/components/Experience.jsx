@@ -1,9 +1,7 @@
-
-
 const Experience = () => {
   return (
     <div class container style={{background: 'black'}}>
-      <section className=" hero" id='experience'>
+      <section className=" hero" id='experience' style={{height: 'auto'}}>
         <div style={{padding: '5%', textAlign: 'center', maxWidth: '90%', margin: 'auto'}}>
             <div id="text">
                 <div class="line">
@@ -19,12 +17,8 @@ const Experience = () => {
                     <d class="word fancy">ExperienceD</d>
                 </div>
                 <div class="line">
-                    <d class="word fancy hover:text-blue transition-all">DATASTRUCTURE AND ALGORITHMS</d>
-                    <d class="word fancy"> 1+ YR Intermediate</d>
-                </div>
-                <div class="line">
-                    <d class="word fancy hover:text-orange transition-all" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>THREEJS GREENSOCK GSAP</d>
-                    <d class="word fancy">Basic</d>
+                    <d class="word fancy hover:text-blue transition-all">JAVA</d>
+                    <d class="word fancy">BASIC</d>
                 </div>
                 <div class="line">
                     <d class="word fancy hover:text-blue transition-all">KOTLIN</d>

@@ -58,7 +58,7 @@ const About = () => {
                   <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
 					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="hover:text-gold transition-all" > <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.imdb.com/title/tt5311514/&ved=2ahUKEwjwsI3RjamHAxWPe2wGHR9iBqIQFnoECD4QAQ&usg=AOvVaw3dxRlPsgi3QAr0aqIVH_th' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>> はい My</a></p>	
 					<p style={{ fontSize: '100px',fontColor: 'gold' }} className="hover:text-gold transition-all"> 私の名前は</p>
-					<p style={{ fontSize: '50px' ,textDecoration: 'none', color: 'inherit'}} className="hover:text-gold transition-all"><a href="/about">Watashinonamaeha - Name is MANAV</a></p>
+					<p style={{ fontSize: '50px' }} className="hover:text-gold transition-all"><a href="/about" style={{textDecorationLine: 'none', color: 'inherit'}}>Watashinonamaeha - Name is MANAV</a></p>
 				  </div>
 				</div>
 			</section>
