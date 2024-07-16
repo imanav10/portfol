@@ -81,12 +81,12 @@ const Contact = () => {
               <textarea type="text" name="user_message" onChange={(e) => setMessage(e.target.value)} placeholder='message' style={{color: 'black'}} required/>
             </label>
             <button type="submit" disabled={loading}>
-              {loading ? 'Sending...' : 'Submit'} {/* Step 2: Update button text based on loading state */}
+              {loading ? 'Sending...' : 'Submit'} {}
             </button>
           </form>
         
           <div style={{paddingTop: '10px'}}>
-            <h2 style={{justifyContent: 'center', paddingTop: '10px', fontSize: '90px', textAlign: 'center'}} className='hover:text-orange stickybar'>マナヴからの愛によって作られた</h2>
+            <h2 style={{justifyContent: 'center', paddingTop: '10px', fontSize: '90px', textAlign: 'center'}} className='hover:text-orange stickybar'><a href='/funtari' style={{textDecorationLine: 'none', color: 'inherit'}}>マナヴからの愛によって作られた</a></h2>
             <h2>made with ❤️ by imanav10</h2>
           </div>
         </div>

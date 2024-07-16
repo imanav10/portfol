@@ -127,7 +127,7 @@ const lowres = () => {
                     </form>
                   
                     <div style={{paddingTop: '10px'}}>
-                      <h2 style={{justifyContent: 'center',fontSize: '20px', textAlign: 'center'}} className='hover:text-orange'>マナヴからの愛によって作られた</h2>
+                      <h2 style={{justifyContent: 'center',fontSize: '20px', textAlign: 'center'}} className='hover:text-orange'><a href='/funtari'>マナヴからの愛によって作られた</a></h2>
                       <h2 style={{fontSize: '10px', marginTop: '10px'}}>made with ❤️ by imanav10</h2>
                     </div>
                   </div>

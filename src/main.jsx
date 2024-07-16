@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Lowres from './components/lowres.jsx'
+import Funtari from './components/funtari.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,9 @@ const router = createBrowserRouter([
   },{
     path: "/lowres",
     element: <Lowres />
+  },{
+    path: '/funtari',
+    element: <Funtari />
   }
 ]);
 
