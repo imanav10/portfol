@@ -82,7 +82,7 @@ const lowres = () => {
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
                         <p style= {{ fontSize: '20px' , paddingLeft: '10px', paddingTop: '10px'}} className="hover:text-gold transition-all" > <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.imdb.com/title/tt5311514/&ved=2ahUKEwjwsI3RjamHAxWPe2wGHR9iBqIQFnoECD4QAQ&usg=AOvVaw3dxRlPsgi3QAr0aqIVH_th' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>> はい My</a></p>	
                         <p style={{ fontSize: '20px',fontColor: 'gold' , paddingLeft: '10px'}} className="hover:text-gold transition-all"> 私の名前は</p>
-                        <p style={{ fontSize: '20px' ,textDecoration: 'none', color: 'inherit', paddingLeft: '10px'}} className="hover:text-gold transition-all"><a href="/about">Watashinonamaeha - Name is MANAV</a></p>
+                        <p style={{ fontSize: '20px' ,textDecoration: 'none', color: 'inherit', paddingLeft: '10px'}} className="hover:text-gold transition-all"><a href="/about" style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>Watashinonamaeha - Name is MANAV</a></p>
 				   </div>
                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
                         <motion.div
@@ -127,7 +127,7 @@ const lowres = () => {
                     </form>
                   
                     <div style={{paddingTop: '10px'}}>
-                      <h2 style={{justifyContent: 'center',fontSize: '20px', textAlign: 'center'}} className='hover:text-orange'><a href='/funtari'>マナヴからの愛によって作られた</a></h2>
+                      <h2 style={{justifyContent: 'center',fontSize: '20px', textAlign: 'center'}} className='hover:text-orange'><a href='/funtari' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>マナヴからの愛によって作られた</a></h2>
                       <h2 style={{fontSize: '10px', marginTop: '10px'}}>made with ❤️ by imanav10</h2>
                     </div>
                   </div>
