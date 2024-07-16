@@ -23,6 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-api.jsx
-.api.jsx
-public/api.jsx
+
