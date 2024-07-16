@@ -40,7 +40,7 @@ const About = () => {
 	return (
 		
 		<div>
-			<section className='hero'>
+			<section className='hero' style={{height: '130vh'}}>
 				  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around' }}>
 				  <motion.div
 					className="github-card-wrapper"

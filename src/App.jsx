@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Lowres from "./Redirectiflowres";
 
 
+
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
+
     </main>
   )
 }

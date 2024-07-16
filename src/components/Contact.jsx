@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { serviceId, publicKey, templateId } from '../../public/api';
 import SoundToggleButton from '../SoundTogglebutton';
 
+
 const Contact = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
@@ -61,7 +62,7 @@ const Contact = () => {
         </video>
         <SoundToggleButton  toggleSound={toggleSound} isPlaying={isPlaying} />
       </section>
-      <section className='hero' style={{paddingLeft: '122px',justifyContent: 'center',alignItems: 'center',color: 'white',   background: 'url("last.gif") no-repeat center center fixed', 
+      <section className='hero' style={{height: '150vh',paddingLeft: '122px',justifyContent: 'center',alignItems: 'center',color: 'white',   background: 'url("last.gif") no-repeat center center fixed', 
   backgroundSize: 'cover',paddingTop: '5%'}} id = 'contact'>
         <div style={{justifyContent: 'center'}}>
           <>
@@ -90,7 +91,9 @@ const Contact = () => {
             <h2>made with ❤️ by imanav10</h2>
           </div>
         </div>
+       
       </section>
+
     </>
   );
 };
