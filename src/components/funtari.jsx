@@ -28,7 +28,7 @@ const funtari = () => {
                             <p style={{color: 'black', fontSize: '19px'}}>If you give up, the game is already over.
                                 	<br/>あきらめたら そこで試合終了ですよ</p>
                             <p style={{color: 'black', fontSize: '19px'}}>Not used Stuff</p>
-                            <br /><a href='https://github.com/imanav10/portfol/tree/master/public' style={{color: 'blue', fontSize: '19px', display: 'flex', alignItems: 'center', gap: '10px'}}><img src="cool.png" style={{width: '6%', height:'10%'}} />./public</a>
+                            <br /><a href='https://github.com/imanav10/portfol/tree/master/public' style={{color: 'blue', fontSize: '19px', display: 'flex', alignItems: 'center', gap: '10px'}}><img src="cool.png" style={{width: '2%', height:'6%'}} />./public</a>
                         </section>
                     </div>
                 </section>
