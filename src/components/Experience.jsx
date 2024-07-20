@@ -29,6 +29,10 @@ const Experience = () => {
                     <d class="word fancy">Intermediate</d>
                 </div>
                 <div class="line">
+                    <d class="word fancy hover:text-orange transition-all">Solidity</d>
+                    <d class="word fancy">Yes</d>
+                </div>
+                <div class="line">
                     <d class="word fancy hover:text-blue transition-all">Lua</d>
                     <d class="word fancy">Intermediate</d>
                 </div>
