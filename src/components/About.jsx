@@ -52,9 +52,13 @@ const About = () => {
 					<div className="github-card" data-github="imanav10" data-width="400" data-height="150" data-theme="default">
 					  {}
 					</div>
+					<br />
+					<a class="twitter-follow-button"
+					href="https://twitter.com/imanav10" style={{background: 'white', padding: '5px', borderRadius: '24px', color: 'black'}}>
+					𝕏 Follow @imanav10</a> 
 					<p className="px-5 hover:text-white transition-all">> pick me and move</p>
 				  </motion.div>
-				  
+
                   <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', color: 'white' }}>
 					<p style= {{ fontSize: '150px' , paddingRight: '0'}} className="hover:text-gold transition-all" > <a href='https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.imdb.com/title/tt5311514/&ved=2ahUKEwjwsI3RjamHAxWPe2wGHR9iBqIQFnoECD4QAQ&usg=AOvVaw3dxRlPsgi3QAr0aqIVH_th' style={{textDecorationLine: 'none', color: 'inherit'}} target=' '>> はい My</a></p>	
 					<p style={{ fontSize: '100px',fontColor: 'gold' }} className="hover:text-gold transition-all"> 私の名前は</p>

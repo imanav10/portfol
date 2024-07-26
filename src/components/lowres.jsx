@@ -95,6 +95,10 @@ const lowres = () => {
                             <div className="github-card" data-github="imanav10" data-width="350" data-height="10" data-theme="default" >
                             {}
                             </div>
+                            <br style={{marginTop:'8px'}}/>
+                            <a class="twitter-follow-button"
+                            href="https://twitter.com/imanav10" style={{background: 'white', padding: '5px', borderRadius: '29px', color: 'black', fontSize: '10px'}}>
+                            𝕏 Follow @imanav10</a> 
                             <p className="hover:text-white transition-all" style={{fontSize: '12px'}}>> pick me and move</p>
                         </motion.div>
 
