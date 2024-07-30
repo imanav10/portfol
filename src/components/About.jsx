@@ -54,8 +54,8 @@ const About = () => {
 					</div>
 					<br />
 					<a class="twitter-follow-button"
-					href="https://twitter.com/imanav10" style={{background: 'white', padding: '5px', borderRadius: '24px', color: 'black'}}>
-					𝕏 Follow @imanav10</a> 
+					href="https://twitter.com/chikoshit" style={{background: 'white', padding: '5px', borderRadius: '24px', color: 'black'}}>
+					𝕏 Follow @chikoshit</a> 
 					<p className="px-5 hover:text-white transition-all">> pick me and move</p>
 				  </motion.div>
 
